@@ -60,9 +60,6 @@ A static web application to help primary school children practice multiplication
 ├── index.html          # Main application file
 ├── style.css          # Styling and animations
 ├── script.js          # Application logic
-├── sounds/            # Audio files directory
-│   ├── correct.mp3    # Success sound
-│   └── wrong.mp3      # Error sound
 └── DESIGN.md          # This design document
 ```
 

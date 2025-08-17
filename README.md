@@ -3,6 +3,12 @@
 ## Overview
 A static web application to help primary school children practice multiplication tables with a playful, cloud-themed interface.
 
+Live Demo: [https://tablestester.surge.sh](https://tablestester.surge.sh)
+
+
+Vibe-coded using [Amazon Q Developer CLI](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html)
+
+
 ## Requirements
 
 ### Functional Requirements

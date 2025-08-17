@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Tables Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Multiplication Magic 🌟</h1>
+            <div class="high-score-display">High Score: <span id="headerHighScore">0</span> 🏆</div>
+            <div class="table-selection">
+                <p>Choose your tables:</p>
+                <div class="checkboxes">
+                    <label><input type="checkbox" value="2"> 2</label>
+                    <label><input type="checkbox" value="3"> 3</label>
+                    <label><input type="checkbox" value="4"> 4</label>
+                    <label><input type="checkbox" value="5"> 5</label>
+                    <label><input type="checkbox" value="6"> 6</label>
+                    <label><input type="checkbox" value="7"> 7</label>
+                    <label><input type="checkbox" value="8"> 8</label>
+                    <label><input type="checkbox" value="9"> 9</label>
+                    <label><input type="checkbox" value="10"> 10</label>
+                    <label><input type="checkbox" value="11"> 11</label>
+                    <label><input type="checkbox" value="12"> 12</label>
+                    <label><input type="checkbox" value="13"> 13</label>
+                    <label><input type="checkbox" value="14"> 14</label>
+                    <label><input type="checkbox" value="15"> 15</label>
+                </div>
+                <button id="startBtn" onclick="startTest()">🚀 Start Test</button>
+            </div>
+        </header>
+
+        <main id="gameArea" class="hidden">
+            <div class="stats-container">
+                <div class="timer">Time: <span id="timer">60</span>s</div>
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="streak">Streak: <span id="streak">0</span> 🔥</div>
+                <div class="high-score">Best: <span id="highScore">0</span> 🏆</div>
+            </div>
+            
+            <div class="flash-card" id="flashCard">
+                <div class="problem" id="problem">Ready?</div>
+            </div>
+            
+            <div class="answer-section">
+                <input type="number" id="answerInput" placeholder="Your answer">
+                <button id="submitBtn" onclick="submitAnswer()">Submit</button>
+            </div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <button id="stopBtn" onclick="stopTest()">Stop Test</button>
+        </main>
+
+        <div id="reviewScreen" class="hidden">
+            <h2>🏁 Speed Test Complete! 🏁</h2>
+            <div class="final-stats">
+                <div class="stat">Final Score: <span id="finalScore">0</span></div>
+                <div class="stat">Max Streak: <span id="finalStreak">0</span></div>
+                <div class="stat">Questions Answered: <span id="totalQuestions">0</span></div>
+            </div>
+            
+            <div id="wrongAnswersSection" class="hidden">
+                <h3>📝 Review - Questions to Practice:</h3>
+                <div id="wrongAnswersList"></div>
+            </div>
+            
+            <button onclick="backToMenu()">🏠 Back to Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
